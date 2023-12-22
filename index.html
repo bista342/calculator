@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculator.css" /> 
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="calculator" value="0" name="display">
+            </div>
+            <div>
+                <input onclick="Erage()" type="button" value="Ac">
+                <input onclick="ClearLast()" type="button" value="DE">
+                <input onclick="Values('.')" type="button" value=".">
+                <input onclick="opt('/')" type="button" value="/" >
+            </div>
+            <div>
+                <input onclick="Values('7')" type="button" value="7">
+                <input onclick="Values('8')"type="button" value="8">
+                <input onclick="Values('9')" type="button" value="9">
+                <input onclick="opt('*')"type="button" value="*" >
+            </div>
+            <div>
+                <input onclick="Values('4')"type="button" value="4">
+                <input onclick="Values('5')"type="button" value="5">
+                <input onclick="Values('6')"type="button" value="6">
+                <input onclick="opt('-')"type="button" value="-">
+            </div>
+            <div>
+                <input onclick="Values('1')"type="button" value="1">
+                <input onclick="Values('2')"type="button" value="2">
+                <input onclick="Values('3')"type="button" value="3">
+                <input onclick="opt('+')"type="button" value="+" >
+            </div>
+            <div class="lassst">
+                <input onclick="Values('00')" type="button" value="00">
+                <input onclick="Values('0')" type="button" value="0">
+                <input onclick="Result()"type="button" value="=" class="equal">
+            </div>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+    
+</body>
+</html>
