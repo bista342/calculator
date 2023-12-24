@@ -42,7 +42,7 @@ function Result(){
 
     displayvalue.value=Results
 
-    firstvalue=Results;
+    firstvalue=Results.toString();
     operator=''
     lastvalue=''
 
@@ -58,5 +58,20 @@ function Erage(){
 
 
 function ClearLast(){
-    displayvalue.value = displayvalue.value.slice(0, -1)
+
+    if(operator.length===0){
+        firstvalue=firstvalue.substring(firstvalue.length-1,-1)
+    displayvalue.value = firstvalue
+    }else if(operator.length>0 && lastvalue.length===0){
+        operator=operator.substring(operator.length-1,-1)
+    displayvalue.value = firstvalue+operator
+
+
+    }else if(operator.length>0 && lastvalue.length>0){
+        lastvalue=lastvalue.substring(lastvalue.length-1,-1)
+        displayvalue.value=firstvalue+operator+lastvalue
+
+    }
+
+
 }
